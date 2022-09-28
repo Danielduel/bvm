@@ -8,7 +8,7 @@ if [ ! -f ./docker-assets/${ARCHIVE} ]; then
 fi
 
 docker build \
-  --platform linux/x86_64 \
+  --platform linux/amd64 \
   --build-arg ARCHIVE=$ARCHIVE \
   -t $DOCKER_TAG \
   -f ./docker/base.Dockerfile \
