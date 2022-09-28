@@ -10,4 +10,4 @@ docker run \
   --net=host \
   -v /tmp/.X11-unix \
   -e DISPLAY \
-  chromiums.local/$DOCKER_TAG
+  $DOCKER_TAG

@@ -35,4 +35,4 @@ COPY --chown=chrome ./docker-assets/${ARCHIVE} ./chrome.zip
 
 RUN unzip chrome.zip -d ./
 
-CMD [ "./chrome-linux/chrome", "--no-sandbox" ]
+CMD [ "./chrome-linux/chrome", "--no-sandbox", "--disable-setuid-sandbox" ]

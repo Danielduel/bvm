@@ -10,6 +10,6 @@ fi
 docker build \
   --platform linux/x86_64 \
   --build-arg ARCHIVE=$ARCHIVE \
-  -t chromiums.local/$DOCKER_TAG \
+  -t $DOCKER_TAG \
   -f ./docker/base.Dockerfile \
   .

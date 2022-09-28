@@ -13,10 +13,12 @@
 
 ## Usage
 
-(`chmod +x ./build.sh ./run.sh`)
+`./build.sh && ./run.sh`
 
 - `./build.sh` fetches browser image (caches it in subdir) and then builds docker image with tag relating to what browser it wraps
 - `./run.sh` calls xhost, passes necessary env, runs prebuilt image
+
+(if you will get permission-related issues - `chmod +x ./build.sh ./run.sh`)
 
 ## Summary
 
