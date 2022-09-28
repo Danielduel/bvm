@@ -1,7 +1,7 @@
 FROM --platform=linux/amd64 ubuntu:18.04
 
 # Base dependencies
-RUN apt-get update && apt-get install -y zip unzip xauth
+RUN apt-get update && apt-get install -y zip unzip xauth libelf-dev
 
 # Chrome 56 dependencies
 RUN apt-get update && apt-get install -y \
@@ -20,7 +20,8 @@ RUN apt-get update && apt-get install -y \
   libxrandr2 \
   libasound2-dev \
   libatk1.0-dev \
-  libgtk2.0-dev
+  libgtk2.0-dev \
+  libcanberra-gtk-module
 
 RUN adduser chrome
 USER chrome
