@@ -1,6 +1,7 @@
 #!/bin/bash
 
 source ./constants.sh
+mkdir -p docker-assets
 
 if [ ! -f ./docker-assets/${ARCHIVE} ]; then
   curl ${ARCHIVE_URL} > ./docker-assets/${ARCHIVE}

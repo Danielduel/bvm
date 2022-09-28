@@ -1,6 +1,22 @@
 # Browser version manager
+
 *chromium version manager*
+
 *(google) chrome version manager*
+
+## Dependencies
+
+- bash
+- docker
+- curl
+- xhost
+
+## Usage
+
+(`chmod +x ./build.sh ./run.sh`)
+
+- `./build.sh` fetches browser image (caches it in subdir) and then builds docker image with tag relating to what browser it wraps
+- `./run.sh` calls xhost, passes necessary env, runs prebuilt image
 
 ## Summary
 
@@ -13,13 +29,6 @@ Dependencies inside the docker are solved for chrome 56,
 it is set as default
 (it is a version before css grid(57), `AbortController`(66) and `globalThis`(71)
 were a thing)
-
-## Dependencies:
-
-- bash
-- docker
-- curl
-- xhost
 
 ### Why?
 
