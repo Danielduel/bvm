@@ -13,3 +13,5 @@ ARCHIVE_ESCAPED="${SNAPSHOT_PLATFORM}%2F${SNAPSHOT_NUMBER}%2F${SNAPSHOT_PRODUCT}
 ARCHIVE_URL="https://www.googleapis.com/download/storage/v1/b/chromium-browser-snapshots/o/${ARCHIVE_ESCAPED}?generation=${SNAPSHOT_GENERATION}&alt=media"
 
 DOCKER_TAG=bvm.local/$ARCHIVE_DOCKER_NAME_NORMALISED
+
+source ./xhost.sh
